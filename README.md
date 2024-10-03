@@ -1,0 +1,2 @@
+# lab1-heuristica
+ 

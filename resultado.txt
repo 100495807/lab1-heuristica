@@ -1,0 +1,106 @@
+Problem:    Mathprog_caso1
+Rows:       26
+Columns:    15 (15 integer, 0 binary)
+Non-zeros:  70
+Status:     INTEGER OPTIMAL
+Objective:  Beneficio_Total = 24100 (MAXimum)
+
+   No.   Row name        Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 Beneficio_Total
+                               24100                             
+     2 Restriccion_Asientos[AV1]
+                                  90                          90 
+     3 Restriccion_Asientos[AV2]
+                                 120                         120 
+     4 Restriccion_Asientos[AV3]
+                                 200                         200 
+     5 Restriccion_Asientos[AV4]
+                                 150                         150 
+     6 Restriccion_Asientos[AV5]
+                                 190                         190 
+     7 Restriccion_Capacidad[AV1]
+                                1094                        1700 
+     8 Restriccion_Capacidad[AV2]
+                                1592                        2700 
+     9 Restriccion_Capacidad[AV3]
+                                1293                        1300 
+    10 Restriccion_Capacidad[AV4]
+                                1690                        1700 
+    11 Restriccion_Capacidad[AV5]
+                                1994                        2000 
+    12 Minimo_LeisurePlus[AV1]
+                                  20            20               
+    13 Minimo_LeisurePlus[AV2]
+                                  20            20               
+    14 Minimo_LeisurePlus[AV3]
+                                  37            20               
+    15 Minimo_LeisurePlus[AV4]
+                                  40            20               
+    16 Minimo_LeisurePlus[AV5]
+                                  58            20               
+    17 Minimo_BusinessPlus[AV1]
+                                  16            10               
+    18 Minimo_BusinessPlus[AV2]
+                                  28            10               
+    19 Minimo_BusinessPlus[AV3]
+                                  10            10               
+    20 Minimo_BusinessPlus[AV4]
+                                  20            10               
+    21 Minimo_BusinessPlus[AV5]
+                                  18            10               
+    22 Proporcion_Estandar[AV1]
+                                   0            -0               
+    23 Proporcion_Estandar[AV2]
+                                   0            -0               
+    24 Proporcion_Estandar[AV3]
+                                  33            -0               
+    25 Proporcion_Estandar[AV4]
+                                   0            -0               
+    26 Proporcion_Estandar[AV5]
+                                   0            -0               
+
+   No. Column name       Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 x[AV1,Estandar]
+                    *             54             0               
+     2 x[AV1,LeisurePlus]
+                    *             20             0               
+     3 x[AV1,BusinessPlus]
+                    *             16             0               
+     4 x[AV2,Estandar]
+                    *             72             0               
+     5 x[AV2,LeisurePlus]
+                    *             20             0               
+     6 x[AV2,BusinessPlus]
+                    *             28             0               
+     7 x[AV3,Estandar]
+                    *            153             0               
+     8 x[AV3,LeisurePlus]
+                    *             37             0               
+     9 x[AV3,BusinessPlus]
+                    *             10             0               
+    10 x[AV4,Estandar]
+                    *             90             0               
+    11 x[AV4,LeisurePlus]
+                    *             40             0               
+    12 x[AV4,BusinessPlus]
+                    *             20             0               
+    13 x[AV5,Estandar]
+                    *            114             0               
+    14 x[AV5,LeisurePlus]
+                    *             58             0               
+    15 x[AV5,BusinessPlus]
+                    *             18             0               
+
+Integer feasibility conditions:
+
+KKT.PE: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output

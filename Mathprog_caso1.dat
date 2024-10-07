@@ -1,0 +1,28 @@
+
+# Definición de conjuntos
+set AVIONES := AV1 AV2 AV3 AV4 AV5;
+set TARIFAS := Estandar LeisurePlus BusinessPlus;
+
+param Asientos :=
+    AV1 90
+    AV2 120
+    AV3 200
+    AV4 150
+    AV5 190;
+
+param Capacidad :=
+    AV1 1700
+    AV2 2700
+    AV3 1300
+    AV4 1700
+    AV5 2000;
+
+param Precio :=
+    Estandar 19
+    LeisurePlus 49
+    BusinessPlus 69;
+
+param Peso :=
+    Estandar 1
+    LeisurePlus 20
+    BusinessPlus 40;

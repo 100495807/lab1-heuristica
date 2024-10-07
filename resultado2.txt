@@ -1,0 +1,1203 @@
+Problem:    Matprog_caso2
+Rows:       470
+Columns:    140 (140 integer, 140 binary)
+Non-zeros:  752
+Status:     INTEGER OPTIMAL
+Objective:  TotalCost = 13500 (MINimum)
+
+   No.   Row name        Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 TotalCost               13500                             
+     2 OneLanding[AV1]
+                                   1             1             = 
+     3 OneLanding[AV2]
+                                   1             1             = 
+     4 OneLanding[AV3]
+                                   1             1             = 
+     5 OneLanding[AV4]
+                                   1             1             = 
+     6 OneLanding[AV5]
+                                   1             1             = 
+     7 OnePlanePerSlot[P1,9]
+                                   0                           1 
+     8 OnePlanePerSlot[P1,9.15]
+                                   0                           1 
+     9 OnePlanePerSlot[P1,9.3]
+                                   0                           1 
+    10 OnePlanePerSlot[P1,9.45]
+                                   0                           1 
+    11 OnePlanePerSlot[P1,10]
+                                   1                           1 
+    12 OnePlanePerSlot[P1,10.15]
+                                   0                           1 
+    13 OnePlanePerSlot[P1,10.3]
+                                   0                           1 
+    14 OnePlanePerSlot[P2,9]
+                                   0                           1 
+    15 OnePlanePerSlot[P2,9.15]
+                                   0                           1 
+    16 OnePlanePerSlot[P2,9.3]
+                                   0                           1 
+    17 OnePlanePerSlot[P2,9.45]
+                                   1                           1 
+    18 OnePlanePerSlot[P2,10]
+                                   0                           1 
+    19 OnePlanePerSlot[P2,10.15]
+                                   0                           1 
+    20 OnePlanePerSlot[P2,10.3]
+                                   0                           1 
+    21 OnePlanePerSlot[P3,9]
+                                   0                           1 
+    22 OnePlanePerSlot[P3,9.15]
+                                   1                           1 
+    23 OnePlanePerSlot[P3,9.3]
+                                   0                           1 
+    24 OnePlanePerSlot[P3,9.45]
+                                   0                           1 
+    25 OnePlanePerSlot[P3,10]
+                                   0                           1 
+    26 OnePlanePerSlot[P3,10.15]
+                                   0                           1 
+    27 OnePlanePerSlot[P3,10.3]
+                                   0                           1 
+    28 OnePlanePerSlot[P4,9]
+                                   1                           1 
+    29 OnePlanePerSlot[P4,9.15]
+                                   0                           1 
+    30 OnePlanePerSlot[P4,9.3]
+                                   0                           1 
+    31 OnePlanePerSlot[P4,9.45]
+                                   0                           1 
+    32 OnePlanePerSlot[P4,10]
+                                   0                           1 
+    33 OnePlanePerSlot[P4,10.15]
+                                   1                           1 
+    34 OnePlanePerSlot[P4,10.3]
+                                   0                           1 
+    35 SlotAvailability[AV1,P1,9]
+                                   0                          -0 
+    36 SlotAvailability[AV1,P1,9.15]
+                                   0                          -0 
+    37 SlotAvailability[AV1,P1,9.3]
+                                   0                          -0 
+    38 SlotAvailability[AV1,P1,9.45]
+                                   0                          -0 
+    39 SlotAvailability[AV1,P1,10]
+                                   0                           1 
+    40 SlotAvailability[AV1,P1,10.15]
+                                   0                           1 
+    41 SlotAvailability[AV1,P1,10.3]
+                                   0                          -0 
+    42 SlotAvailability[AV1,P2,9]
+                                   0                          -0 
+    43 SlotAvailability[AV1,P2,9.15]
+                                   0                          -0 
+    44 SlotAvailability[AV1,P2,9.3]
+                                   0                           1 
+    45 SlotAvailability[AV1,P2,9.45]
+                                   0                           1 
+    46 SlotAvailability[AV1,P2,10]
+                                   0                          -0 
+    47 SlotAvailability[AV1,P2,10.15]
+                                   0                          -0 
+    48 SlotAvailability[AV1,P2,10.3]
+                                   0                          -0 
+    49 SlotAvailability[AV1,P3,9]
+                                   0                           1 
+    50 SlotAvailability[AV1,P3,9.15]
+                                   1                           1 
+    51 SlotAvailability[AV1,P3,9.3]
+                                   0                           1 
+    52 SlotAvailability[AV1,P3,9.45]
+                                   0                          -0 
+    53 SlotAvailability[AV1,P3,10]
+                                   0                          -0 
+    54 SlotAvailability[AV1,P3,10.15]
+                                   0                           1 
+    55 SlotAvailability[AV1,P3,10.3]
+                                   0                          -0 
+    56 SlotAvailability[AV1,P4,9]
+                                   0                           1 
+    57 SlotAvailability[AV1,P4,9.15]
+                                   0                          -0 
+    58 SlotAvailability[AV1,P4,9.3]
+                                   0                          -0 
+    59 SlotAvailability[AV1,P4,9.45]
+                                   0                          -0 
+    60 SlotAvailability[AV1,P4,10]
+                                   0                           1 
+    61 SlotAvailability[AV1,P4,10.15]
+                                   0                           1 
+    62 SlotAvailability[AV1,P4,10.3]
+                                   0                          -0 
+    63 SlotAvailability[AV2,P1,9]
+                                   0                          -0 
+    64 SlotAvailability[AV2,P1,9.15]
+                                   0                          -0 
+    65 SlotAvailability[AV2,P1,9.3]
+                                   0                          -0 
+    66 SlotAvailability[AV2,P1,9.45]
+                                   0                          -0 
+    67 SlotAvailability[AV2,P1,10]
+                                   0                           1 
+    68 SlotAvailability[AV2,P1,10.15]
+                                   0                           1 
+    69 SlotAvailability[AV2,P1,10.3]
+                                   0                          -0 
+    70 SlotAvailability[AV2,P2,9]
+                                   0                          -0 
+    71 SlotAvailability[AV2,P2,9.15]
+                                   0                          -0 
+    72 SlotAvailability[AV2,P2,9.3]
+                                   0                           1 
+    73 SlotAvailability[AV2,P2,9.45]
+                                   0                           1 
+    74 SlotAvailability[AV2,P2,10]
+                                   0                          -0 
+    75 SlotAvailability[AV2,P2,10.15]
+                                   0                          -0 
+    76 SlotAvailability[AV2,P2,10.3]
+                                   0                          -0 
+    77 SlotAvailability[AV2,P3,9]
+                                   0                           1 
+    78 SlotAvailability[AV2,P3,9.15]
+                                   0                           1 
+    79 SlotAvailability[AV2,P3,9.3]
+                                   0                           1 
+    80 SlotAvailability[AV2,P3,9.45]
+                                   0                          -0 
+    81 SlotAvailability[AV2,P3,10]
+                                   0                          -0 
+    82 SlotAvailability[AV2,P3,10.15]
+                                   0                           1 
+    83 SlotAvailability[AV2,P3,10.3]
+                                   0                          -0 
+    84 SlotAvailability[AV2,P4,9]
+                                   1                           1 
+    85 SlotAvailability[AV2,P4,9.15]
+                                   0                          -0 
+    86 SlotAvailability[AV2,P4,9.3]
+                                   0                          -0 
+    87 SlotAvailability[AV2,P4,9.45]
+                                   0                          -0 
+    88 SlotAvailability[AV2,P4,10]
+                                   0                           1 
+    89 SlotAvailability[AV2,P4,10.15]
+                                   0                           1 
+    90 SlotAvailability[AV2,P4,10.3]
+                                   0                          -0 
+    91 SlotAvailability[AV3,P1,9]
+                                   0                          -0 
+    92 SlotAvailability[AV3,P1,9.15]
+                                   0                          -0 
+    93 SlotAvailability[AV3,P1,9.3]
+                                   0                          -0 
+    94 SlotAvailability[AV3,P1,9.45]
+                                   0                          -0 
+    95 SlotAvailability[AV3,P1,10]
+                                   0                           1 
+    96 SlotAvailability[AV3,P1,10.15]
+                                   0                           1 
+    97 SlotAvailability[AV3,P1,10.3]
+                                   0                          -0 
+    98 SlotAvailability[AV3,P2,9]
+                                   0                          -0 
+    99 SlotAvailability[AV3,P2,9.15]
+                                   0                          -0 
+   100 SlotAvailability[AV3,P2,9.3]
+                                   0                           1 
+   101 SlotAvailability[AV3,P2,9.45]
+                                   1                           1 
+   102 SlotAvailability[AV3,P2,10]
+                                   0                          -0 
+   103 SlotAvailability[AV3,P2,10.15]
+                                   0                          -0 
+   104 SlotAvailability[AV3,P2,10.3]
+                                   0                          -0 
+   105 SlotAvailability[AV3,P3,9]
+                                   0                           1 
+   106 SlotAvailability[AV3,P3,9.15]
+                                   0                           1 
+   107 SlotAvailability[AV3,P3,9.3]
+                                   0                           1 
+   108 SlotAvailability[AV3,P3,9.45]
+                                   0                          -0 
+   109 SlotAvailability[AV3,P3,10]
+                                   0                          -0 
+   110 SlotAvailability[AV3,P3,10.15]
+                                   0                           1 
+   111 SlotAvailability[AV3,P3,10.3]
+                                   0                          -0 
+   112 SlotAvailability[AV3,P4,9]
+                                   0                           1 
+   113 SlotAvailability[AV3,P4,9.15]
+                                   0                          -0 
+   114 SlotAvailability[AV3,P4,9.3]
+                                   0                          -0 
+   115 SlotAvailability[AV3,P4,9.45]
+                                   0                          -0 
+   116 SlotAvailability[AV3,P4,10]
+                                   0                           1 
+   117 SlotAvailability[AV3,P4,10.15]
+                                   0                           1 
+   118 SlotAvailability[AV3,P4,10.3]
+                                   0                          -0 
+   119 SlotAvailability[AV4,P1,9]
+                                   0                          -0 
+   120 SlotAvailability[AV4,P1,9.15]
+                                   0                          -0 
+   121 SlotAvailability[AV4,P1,9.3]
+                                   0                          -0 
+   122 SlotAvailability[AV4,P1,9.45]
+                                   0                          -0 
+   123 SlotAvailability[AV4,P1,10]
+                                   1                           1 
+   124 SlotAvailability[AV4,P1,10.15]
+                                   0                           1 
+   125 SlotAvailability[AV4,P1,10.3]
+                                   0                          -0 
+   126 SlotAvailability[AV4,P2,9]
+                                   0                          -0 
+   127 SlotAvailability[AV4,P2,9.15]
+                                   0                          -0 
+   128 SlotAvailability[AV4,P2,9.3]
+                                   0                           1 
+   129 SlotAvailability[AV4,P2,9.45]
+                                   0                           1 
+   130 SlotAvailability[AV4,P2,10]
+                                   0                          -0 
+   131 SlotAvailability[AV4,P2,10.15]
+                                   0                          -0 
+   132 SlotAvailability[AV4,P2,10.3]
+                                   0                          -0 
+   133 SlotAvailability[AV4,P3,9]
+                                   0                           1 
+   134 SlotAvailability[AV4,P3,9.15]
+                                   0                           1 
+   135 SlotAvailability[AV4,P3,9.3]
+                                   0                           1 
+   136 SlotAvailability[AV4,P3,9.45]
+                                   0                          -0 
+   137 SlotAvailability[AV4,P3,10]
+                                   0                          -0 
+   138 SlotAvailability[AV4,P3,10.15]
+                                   0                           1 
+   139 SlotAvailability[AV4,P3,10.3]
+                                   0                          -0 
+   140 SlotAvailability[AV4,P4,9]
+                                   0                           1 
+   141 SlotAvailability[AV4,P4,9.15]
+                                   0                          -0 
+   142 SlotAvailability[AV4,P4,9.3]
+                                   0                          -0 
+   143 SlotAvailability[AV4,P4,9.45]
+                                   0                          -0 
+   144 SlotAvailability[AV4,P4,10]
+                                   0                           1 
+   145 SlotAvailability[AV4,P4,10.15]
+                                   0                           1 
+   146 SlotAvailability[AV4,P4,10.3]
+                                   0                          -0 
+   147 SlotAvailability[AV5,P1,9]
+                                   0                          -0 
+   148 SlotAvailability[AV5,P1,9.15]
+                                   0                          -0 
+   149 SlotAvailability[AV5,P1,9.3]
+                                   0                          -0 
+   150 SlotAvailability[AV5,P1,9.45]
+                                   0                          -0 
+   151 SlotAvailability[AV5,P1,10]
+                                   0                           1 
+   152 SlotAvailability[AV5,P1,10.15]
+                                   0                           1 
+   153 SlotAvailability[AV5,P1,10.3]
+                                   0                          -0 
+   154 SlotAvailability[AV5,P2,9]
+                                   0                          -0 
+   155 SlotAvailability[AV5,P2,9.15]
+                                   0                          -0 
+   156 SlotAvailability[AV5,P2,9.3]
+                                   0                           1 
+   157 SlotAvailability[AV5,P2,9.45]
+                                   0                           1 
+   158 SlotAvailability[AV5,P2,10]
+                                   0                          -0 
+   159 SlotAvailability[AV5,P2,10.15]
+                                   0                          -0 
+   160 SlotAvailability[AV5,P2,10.3]
+                                   0                          -0 
+   161 SlotAvailability[AV5,P3,9]
+                                   0                           1 
+   162 SlotAvailability[AV5,P3,9.15]
+                                   0                           1 
+   163 SlotAvailability[AV5,P3,9.3]
+                                   0                           1 
+   164 SlotAvailability[AV5,P3,9.45]
+                                   0                          -0 
+   165 SlotAvailability[AV5,P3,10]
+                                   0                          -0 
+   166 SlotAvailability[AV5,P3,10.15]
+                                   0                           1 
+   167 SlotAvailability[AV5,P3,10.3]
+                                   0                          -0 
+   168 SlotAvailability[AV5,P4,9]
+                                   0                           1 
+   169 SlotAvailability[AV5,P4,9.15]
+                                   0                          -0 
+   170 SlotAvailability[AV5,P4,9.3]
+                                   0                          -0 
+   171 SlotAvailability[AV5,P4,9.45]
+                                   0                          -0 
+   172 SlotAvailability[AV5,P4,10]
+                                   0                           1 
+   173 SlotAvailability[AV5,P4,10.15]
+                                   1                           1 
+   174 SlotAvailability[AV5,P4,10.3]
+                                   0                          -0 
+   175 AfterArrival[AV1,P1,9]
+                                   0            -0             = 
+   176 AfterArrival[AV1,P1,9.15]
+                                   0            -0             = 
+   177 AfterArrival[AV1,P1,9.3]
+                                   0            -0             = 
+   178 AfterArrival[AV1,P1,9.45]
+                                   0            -0             = 
+   179 AfterArrival[AV1,P1,10]
+                                   0            -0             = 
+   180 AfterArrival[AV1,P1,10.15]
+                                   0            -0             = 
+   181 AfterArrival[AV1,P1,10.3]
+                                   0            -0             = 
+   182 AfterArrival[AV1,P2,9]
+                                   0            -0             = 
+   183 AfterArrival[AV1,P2,9.15]
+                                   0            -0             = 
+   184 AfterArrival[AV1,P2,9.3]
+                                   0            -0             = 
+   185 AfterArrival[AV1,P2,9.45]
+                                   0            -0             = 
+   186 AfterArrival[AV1,P2,10]
+                                   0            -0             = 
+   187 AfterArrival[AV1,P2,10.15]
+                                   0            -0             = 
+   188 AfterArrival[AV1,P2,10.3]
+                                   0            -0             = 
+   189 AfterArrival[AV1,P3,9]
+                                   0            -0             = 
+   190 AfterArrival[AV1,P3,9.15]
+                                   0            -0             = 
+   191 AfterArrival[AV1,P3,9.3]
+                                   0            -0             = 
+   192 AfterArrival[AV1,P3,9.45]
+                                   0            -0             = 
+   193 AfterArrival[AV1,P3,10]
+                                   0            -0             = 
+   194 AfterArrival[AV1,P3,10.15]
+                                   0            -0             = 
+   195 AfterArrival[AV1,P3,10.3]
+                                   0            -0             = 
+   196 AfterArrival[AV1,P4,9]
+                                   0            -0             = 
+   197 AfterArrival[AV1,P4,9.15]
+                                   0            -0             = 
+   198 AfterArrival[AV1,P4,9.3]
+                                   0            -0             = 
+   199 AfterArrival[AV1,P4,9.45]
+                                   0            -0             = 
+   200 AfterArrival[AV1,P4,10]
+                                   0            -0             = 
+   201 AfterArrival[AV1,P4,10.15]
+                                   0            -0             = 
+   202 AfterArrival[AV1,P4,10.3]
+                                   0            -0             = 
+   203 AfterArrival[AV2,P1,9]
+                                   0            -0             = 
+   204 AfterArrival[AV2,P1,9.15]
+                                   0            -0             = 
+   205 AfterArrival[AV2,P1,9.3]
+                                   0            -0             = 
+   206 AfterArrival[AV2,P1,9.45]
+                                   0            -0             = 
+   207 AfterArrival[AV2,P1,10]
+                                   0            -0             = 
+   208 AfterArrival[AV2,P1,10.15]
+                                   0            -0             = 
+   209 AfterArrival[AV2,P1,10.3]
+                                   0            -0             = 
+   210 AfterArrival[AV2,P2,9]
+                                   0            -0             = 
+   211 AfterArrival[AV2,P2,9.15]
+                                   0            -0             = 
+   212 AfterArrival[AV2,P2,9.3]
+                                   0            -0             = 
+   213 AfterArrival[AV2,P2,9.45]
+                                   0            -0             = 
+   214 AfterArrival[AV2,P2,10]
+                                   0            -0             = 
+   215 AfterArrival[AV2,P2,10.15]
+                                   0            -0             = 
+   216 AfterArrival[AV2,P2,10.3]
+                                   0            -0             = 
+   217 AfterArrival[AV2,P3,9]
+                                   0            -0             = 
+   218 AfterArrival[AV2,P3,9.15]
+                                   0            -0             = 
+   219 AfterArrival[AV2,P3,9.3]
+                                   0            -0             = 
+   220 AfterArrival[AV2,P3,9.45]
+                                   0            -0             = 
+   221 AfterArrival[AV2,P3,10]
+                                   0            -0             = 
+   222 AfterArrival[AV2,P3,10.15]
+                                   0            -0             = 
+   223 AfterArrival[AV2,P3,10.3]
+                                   0            -0             = 
+   224 AfterArrival[AV2,P4,9]
+                                   0            -0             = 
+   225 AfterArrival[AV2,P4,9.15]
+                                   0            -0             = 
+   226 AfterArrival[AV2,P4,9.3]
+                                   0            -0             = 
+   227 AfterArrival[AV2,P4,9.45]
+                                   0            -0             = 
+   228 AfterArrival[AV2,P4,10]
+                                   0            -0             = 
+   229 AfterArrival[AV2,P4,10.15]
+                                   0            -0             = 
+   230 AfterArrival[AV2,P4,10.3]
+                                   0            -0             = 
+   231 AfterArrival[AV3,P1,9]
+                                   0            -0             = 
+   232 AfterArrival[AV3,P1,9.15]
+                                   0            -0             = 
+   233 AfterArrival[AV3,P1,9.3]
+                                   0            -0             = 
+   234 AfterArrival[AV3,P1,9.45]
+                                   0            -0             = 
+   235 AfterArrival[AV3,P1,10]
+                                   0            -0             = 
+   236 AfterArrival[AV3,P1,10.15]
+                                   0            -0             = 
+   237 AfterArrival[AV3,P1,10.3]
+                                   0            -0             = 
+   238 AfterArrival[AV3,P2,9]
+                                   0            -0             = 
+   239 AfterArrival[AV3,P2,9.15]
+                                   0            -0             = 
+   240 AfterArrival[AV3,P2,9.3]
+                                   0            -0             = 
+   241 AfterArrival[AV3,P2,9.45]
+                                   0            -0             = 
+   242 AfterArrival[AV3,P2,10]
+                                   0            -0             = 
+   243 AfterArrival[AV3,P2,10.15]
+                                   0            -0             = 
+   244 AfterArrival[AV3,P2,10.3]
+                                   0            -0             = 
+   245 AfterArrival[AV3,P3,9]
+                                   0            -0             = 
+   246 AfterArrival[AV3,P3,9.15]
+                                   0            -0             = 
+   247 AfterArrival[AV3,P3,9.3]
+                                   0            -0             = 
+   248 AfterArrival[AV3,P3,9.45]
+                                   0            -0             = 
+   249 AfterArrival[AV3,P3,10]
+                                   0            -0             = 
+   250 AfterArrival[AV3,P3,10.15]
+                                   0            -0             = 
+   251 AfterArrival[AV3,P3,10.3]
+                                   0            -0             = 
+   252 AfterArrival[AV3,P4,9]
+                                   0            -0             = 
+   253 AfterArrival[AV3,P4,9.15]
+                                   0            -0             = 
+   254 AfterArrival[AV3,P4,9.3]
+                                   0            -0             = 
+   255 AfterArrival[AV3,P4,9.45]
+                                   0            -0             = 
+   256 AfterArrival[AV3,P4,10]
+                                   0            -0             = 
+   257 AfterArrival[AV3,P4,10.15]
+                                   0            -0             = 
+   258 AfterArrival[AV3,P4,10.3]
+                                   0            -0             = 
+   259 AfterArrival[AV4,P1,9]
+                                   0            -0             = 
+   260 AfterArrival[AV4,P1,9.15]
+                                   0            -0             = 
+   261 AfterArrival[AV4,P1,9.3]
+                                   0            -0             = 
+   262 AfterArrival[AV4,P1,9.45]
+                                   0            -0             = 
+   263 AfterArrival[AV4,P1,10]
+                                   0            -0             = 
+   264 AfterArrival[AV4,P1,10.15]
+                                   0            -0             = 
+   265 AfterArrival[AV4,P1,10.3]
+                                   0            -0             = 
+   266 AfterArrival[AV4,P2,9]
+                                   0            -0             = 
+   267 AfterArrival[AV4,P2,9.15]
+                                   0            -0             = 
+   268 AfterArrival[AV4,P2,9.3]
+                                   0            -0             = 
+   269 AfterArrival[AV4,P2,9.45]
+                                   0            -0             = 
+   270 AfterArrival[AV4,P2,10]
+                                   0            -0             = 
+   271 AfterArrival[AV4,P2,10.15]
+                                   0            -0             = 
+   272 AfterArrival[AV4,P2,10.3]
+                                   0            -0             = 
+   273 AfterArrival[AV4,P3,9]
+                                   0            -0             = 
+   274 AfterArrival[AV4,P3,9.15]
+                                   0            -0             = 
+   275 AfterArrival[AV4,P3,9.3]
+                                   0            -0             = 
+   276 AfterArrival[AV4,P3,9.45]
+                                   0            -0             = 
+   277 AfterArrival[AV4,P3,10]
+                                   0            -0             = 
+   278 AfterArrival[AV4,P3,10.15]
+                                   0            -0             = 
+   279 AfterArrival[AV4,P3,10.3]
+                                   0            -0             = 
+   280 AfterArrival[AV4,P4,9]
+                                   0            -0             = 
+   281 AfterArrival[AV4,P4,9.15]
+                                   0            -0             = 
+   282 AfterArrival[AV4,P4,9.3]
+                                   0            -0             = 
+   283 AfterArrival[AV4,P4,9.45]
+                                   0            -0             = 
+   284 AfterArrival[AV4,P4,10]
+                                   0            -0             = 
+   285 AfterArrival[AV4,P4,10.15]
+                                   0            -0             = 
+   286 AfterArrival[AV4,P4,10.3]
+                                   0            -0             = 
+   287 AfterArrival[AV5,P1,9]
+                                   0            -0             = 
+   288 AfterArrival[AV5,P1,9.15]
+                                   0            -0             = 
+   289 AfterArrival[AV5,P1,9.3]
+                                   0            -0             = 
+   290 AfterArrival[AV5,P1,9.45]
+                                   0            -0             = 
+   291 AfterArrival[AV5,P1,10]
+                                   0            -0             = 
+   292 AfterArrival[AV5,P1,10.15]
+                                   0            -0             = 
+   293 AfterArrival[AV5,P1,10.3]
+                                   0            -0             = 
+   294 AfterArrival[AV5,P2,9]
+                                   0            -0             = 
+   295 AfterArrival[AV5,P2,9.15]
+                                   0            -0             = 
+   296 AfterArrival[AV5,P2,9.3]
+                                   0            -0             = 
+   297 AfterArrival[AV5,P2,9.45]
+                                   0            -0             = 
+   298 AfterArrival[AV5,P2,10]
+                                   0            -0             = 
+   299 AfterArrival[AV5,P2,10.15]
+                                   0            -0             = 
+   300 AfterArrival[AV5,P2,10.3]
+                                   0            -0             = 
+   301 AfterArrival[AV5,P3,9]
+                                   0            -0             = 
+   302 AfterArrival[AV5,P3,9.15]
+                                   0            -0             = 
+   303 AfterArrival[AV5,P3,9.3]
+                                   0            -0             = 
+   304 AfterArrival[AV5,P3,9.45]
+                                   0            -0             = 
+   305 AfterArrival[AV5,P3,10]
+                                   0            -0             = 
+   306 AfterArrival[AV5,P3,10.15]
+                                   0            -0             = 
+   307 AfterArrival[AV5,P3,10.3]
+                                   0            -0             = 
+   308 AfterArrival[AV5,P4,9]
+                                   0            -0             = 
+   309 AfterArrival[AV5,P4,9.15]
+                                   0            -0             = 
+   310 AfterArrival[AV5,P4,9.3]
+                                   0            -0             = 
+   311 AfterArrival[AV5,P4,9.45]
+                                   0            -0             = 
+   312 AfterArrival[AV5,P4,10]
+                                   0            -0             = 
+   313 AfterArrival[AV5,P4,10.15]
+                                   0            -0             = 
+   314 AfterArrival[AV5,P4,10.3]
+                                   0            -0             = 
+   315 BeforeDeadline[AV1,P1,9]
+                                   0            -0             = 
+   316 BeforeDeadline[AV1,P1,9.15]
+                                   0            -0             = 
+   317 BeforeDeadline[AV1,P1,9.3]
+                                   0            -0             = 
+   318 BeforeDeadline[AV1,P1,9.45]
+                                   0            -0             = 
+   319 BeforeDeadline[AV1,P1,10]
+                                   0            -0             = 
+   320 BeforeDeadline[AV1,P1,10.15]
+                                   0            -0             = 
+   321 BeforeDeadline[AV1,P1,10.3]
+                                   0            -0             = 
+   322 BeforeDeadline[AV1,P2,9]
+                                   0            -0             = 
+   323 BeforeDeadline[AV1,P2,9.15]
+                                   0            -0             = 
+   324 BeforeDeadline[AV1,P2,9.3]
+                                   0            -0             = 
+   325 BeforeDeadline[AV1,P2,9.45]
+                                   0            -0             = 
+   326 BeforeDeadline[AV1,P2,10]
+                                   0            -0             = 
+   327 BeforeDeadline[AV1,P2,10.15]
+                                   0            -0             = 
+   328 BeforeDeadline[AV1,P2,10.3]
+                                   0            -0             = 
+   329 BeforeDeadline[AV1,P3,9]
+                                   0            -0             = 
+   330 BeforeDeadline[AV1,P3,9.15]
+                                   0            -0             = 
+   331 BeforeDeadline[AV1,P3,9.3]
+                                   0            -0             = 
+   332 BeforeDeadline[AV1,P3,9.45]
+                                   0            -0             = 
+   333 BeforeDeadline[AV1,P3,10]
+                                   0            -0             = 
+   334 BeforeDeadline[AV1,P3,10.15]
+                                   0            -0             = 
+   335 BeforeDeadline[AV1,P3,10.3]
+                                   0            -0             = 
+   336 BeforeDeadline[AV1,P4,9]
+                                   0            -0             = 
+   337 BeforeDeadline[AV1,P4,9.15]
+                                   0            -0             = 
+   338 BeforeDeadline[AV1,P4,9.3]
+                                   0            -0             = 
+   339 BeforeDeadline[AV1,P4,9.45]
+                                   0            -0             = 
+   340 BeforeDeadline[AV1,P4,10]
+                                   0            -0             = 
+   341 BeforeDeadline[AV1,P4,10.15]
+                                   0            -0             = 
+   342 BeforeDeadline[AV1,P4,10.3]
+                                   0            -0             = 
+   343 BeforeDeadline[AV2,P1,9]
+                                   0            -0             = 
+   344 BeforeDeadline[AV2,P1,9.15]
+                                   0            -0             = 
+   345 BeforeDeadline[AV2,P1,9.3]
+                                   0            -0             = 
+   346 BeforeDeadline[AV2,P1,9.45]
+                                   0            -0             = 
+   347 BeforeDeadline[AV2,P1,10]
+                                   0            -0             = 
+   348 BeforeDeadline[AV2,P1,10.15]
+                                   0            -0             = 
+   349 BeforeDeadline[AV2,P1,10.3]
+                                   0            -0             = 
+   350 BeforeDeadline[AV2,P2,9]
+                                   0            -0             = 
+   351 BeforeDeadline[AV2,P2,9.15]
+                                   0            -0             = 
+   352 BeforeDeadline[AV2,P2,9.3]
+                                   0            -0             = 
+   353 BeforeDeadline[AV2,P2,9.45]
+                                   0            -0             = 
+   354 BeforeDeadline[AV2,P2,10]
+                                   0            -0             = 
+   355 BeforeDeadline[AV2,P2,10.15]
+                                   0            -0             = 
+   356 BeforeDeadline[AV2,P2,10.3]
+                                   0            -0             = 
+   357 BeforeDeadline[AV2,P3,9]
+                                   0            -0             = 
+   358 BeforeDeadline[AV2,P3,9.15]
+                                   0            -0             = 
+   359 BeforeDeadline[AV2,P3,9.3]
+                                   0            -0             = 
+   360 BeforeDeadline[AV2,P3,9.45]
+                                   0            -0             = 
+   361 BeforeDeadline[AV2,P3,10]
+                                   0            -0             = 
+   362 BeforeDeadline[AV2,P3,10.15]
+                                   0            -0             = 
+   363 BeforeDeadline[AV2,P3,10.3]
+                                   0            -0             = 
+   364 BeforeDeadline[AV2,P4,9]
+                                   0            -0             = 
+   365 BeforeDeadline[AV2,P4,9.15]
+                                   0            -0             = 
+   366 BeforeDeadline[AV2,P4,9.3]
+                                   0            -0             = 
+   367 BeforeDeadline[AV2,P4,9.45]
+                                   0            -0             = 
+   368 BeforeDeadline[AV2,P4,10]
+                                   0            -0             = 
+   369 BeforeDeadline[AV2,P4,10.15]
+                                   0            -0             = 
+   370 BeforeDeadline[AV2,P4,10.3]
+                                   0            -0             = 
+   371 BeforeDeadline[AV3,P1,9]
+                                   0            -0             = 
+   372 BeforeDeadline[AV3,P1,9.15]
+                                   0            -0             = 
+   373 BeforeDeadline[AV3,P1,9.3]
+                                   0            -0             = 
+   374 BeforeDeadline[AV3,P1,9.45]
+                                   0            -0             = 
+   375 BeforeDeadline[AV3,P1,10]
+                                   0            -0             = 
+   376 BeforeDeadline[AV3,P1,10.15]
+                                   0            -0             = 
+   377 BeforeDeadline[AV3,P1,10.3]
+                                   0            -0             = 
+   378 BeforeDeadline[AV3,P2,9]
+                                   0            -0             = 
+   379 BeforeDeadline[AV3,P2,9.15]
+                                   0            -0             = 
+   380 BeforeDeadline[AV3,P2,9.3]
+                                   0            -0             = 
+   381 BeforeDeadline[AV3,P2,9.45]
+                                   0            -0             = 
+   382 BeforeDeadline[AV3,P2,10]
+                                   0            -0             = 
+   383 BeforeDeadline[AV3,P2,10.15]
+                                   0            -0             = 
+   384 BeforeDeadline[AV3,P2,10.3]
+                                   0            -0             = 
+   385 BeforeDeadline[AV3,P3,9]
+                                   0            -0             = 
+   386 BeforeDeadline[AV3,P3,9.15]
+                                   0            -0             = 
+   387 BeforeDeadline[AV3,P3,9.3]
+                                   0            -0             = 
+   388 BeforeDeadline[AV3,P3,9.45]
+                                   0            -0             = 
+   389 BeforeDeadline[AV3,P3,10]
+                                   0            -0             = 
+   390 BeforeDeadline[AV3,P3,10.15]
+                                   0            -0             = 
+   391 BeforeDeadline[AV3,P3,10.3]
+                                   0            -0             = 
+   392 BeforeDeadline[AV3,P4,9]
+                                   0            -0             = 
+   393 BeforeDeadline[AV3,P4,9.15]
+                                   0            -0             = 
+   394 BeforeDeadline[AV3,P4,9.3]
+                                   0            -0             = 
+   395 BeforeDeadline[AV3,P4,9.45]
+                                   0            -0             = 
+   396 BeforeDeadline[AV3,P4,10]
+                                   0            -0             = 
+   397 BeforeDeadline[AV3,P4,10.15]
+                                   0            -0             = 
+   398 BeforeDeadline[AV3,P4,10.3]
+                                   0            -0             = 
+   399 BeforeDeadline[AV4,P1,9]
+                                   0            -0             = 
+   400 BeforeDeadline[AV4,P1,9.15]
+                                   0            -0             = 
+   401 BeforeDeadline[AV4,P1,9.3]
+                                   0            -0             = 
+   402 BeforeDeadline[AV4,P1,9.45]
+                                   0            -0             = 
+   403 BeforeDeadline[AV4,P1,10]
+                                   0            -0             = 
+   404 BeforeDeadline[AV4,P1,10.15]
+                                   0            -0             = 
+   405 BeforeDeadline[AV4,P1,10.3]
+                                   0            -0             = 
+   406 BeforeDeadline[AV4,P2,9]
+                                   0            -0             = 
+   407 BeforeDeadline[AV4,P2,9.15]
+                                   0            -0             = 
+   408 BeforeDeadline[AV4,P2,9.3]
+                                   0            -0             = 
+   409 BeforeDeadline[AV4,P2,9.45]
+                                   0            -0             = 
+   410 BeforeDeadline[AV4,P2,10]
+                                   0            -0             = 
+   411 BeforeDeadline[AV4,P2,10.15]
+                                   0            -0             = 
+   412 BeforeDeadline[AV4,P2,10.3]
+                                   0            -0             = 
+   413 BeforeDeadline[AV4,P3,9]
+                                   0            -0             = 
+   414 BeforeDeadline[AV4,P3,9.15]
+                                   0            -0             = 
+   415 BeforeDeadline[AV4,P3,9.3]
+                                   0            -0             = 
+   416 BeforeDeadline[AV4,P3,9.45]
+                                   0            -0             = 
+   417 BeforeDeadline[AV4,P3,10]
+                                   0            -0             = 
+   418 BeforeDeadline[AV4,P3,10.15]
+                                   0            -0             = 
+   419 BeforeDeadline[AV4,P3,10.3]
+                                   0            -0             = 
+   420 BeforeDeadline[AV4,P4,9]
+                                   0            -0             = 
+   421 BeforeDeadline[AV4,P4,9.15]
+                                   0            -0             = 
+   422 BeforeDeadline[AV4,P4,9.3]
+                                   0            -0             = 
+   423 BeforeDeadline[AV4,P4,9.45]
+                                   0            -0             = 
+   424 BeforeDeadline[AV4,P4,10]
+                                   0            -0             = 
+   425 BeforeDeadline[AV4,P4,10.15]
+                                   0            -0             = 
+   426 BeforeDeadline[AV4,P4,10.3]
+                                   0            -0             = 
+   427 BeforeDeadline[AV5,P1,9]
+                                   0            -0             = 
+   428 BeforeDeadline[AV5,P1,9.15]
+                                   0            -0             = 
+   429 BeforeDeadline[AV5,P1,9.3]
+                                   0            -0             = 
+   430 BeforeDeadline[AV5,P1,9.45]
+                                   0            -0             = 
+   431 BeforeDeadline[AV5,P1,10]
+                                   0            -0             = 
+   432 BeforeDeadline[AV5,P1,10.15]
+                                   0            -0             = 
+   433 BeforeDeadline[AV5,P1,10.3]
+                                   0            -0             = 
+   434 BeforeDeadline[AV5,P2,9]
+                                   0            -0             = 
+   435 BeforeDeadline[AV5,P2,9.15]
+                                   0            -0             = 
+   436 BeforeDeadline[AV5,P2,9.3]
+                                   0            -0             = 
+   437 BeforeDeadline[AV5,P2,9.45]
+                                   0            -0             = 
+   438 BeforeDeadline[AV5,P2,10]
+                                   0            -0             = 
+   439 BeforeDeadline[AV5,P2,10.15]
+                                   0            -0             = 
+   440 BeforeDeadline[AV5,P2,10.3]
+                                   0            -0             = 
+   441 BeforeDeadline[AV5,P3,9]
+                                   0            -0             = 
+   442 BeforeDeadline[AV5,P3,9.15]
+                                   0            -0             = 
+   443 BeforeDeadline[AV5,P3,9.3]
+                                   0            -0             = 
+   444 BeforeDeadline[AV5,P3,9.45]
+                                   0            -0             = 
+   445 BeforeDeadline[AV5,P3,10]
+                                   0            -0             = 
+   446 BeforeDeadline[AV5,P3,10.15]
+                                   0            -0             = 
+   447 BeforeDeadline[AV5,P3,10.3]
+                                   0            -0             = 
+   448 BeforeDeadline[AV5,P4,9]
+                                   0            -0             = 
+   449 BeforeDeadline[AV5,P4,9.15]
+                                   0            -0             = 
+   450 BeforeDeadline[AV5,P4,9.3]
+                                   0            -0             = 
+   451 BeforeDeadline[AV5,P4,9.45]
+                                   0            -0             = 
+   452 BeforeDeadline[AV5,P4,10]
+                                   0            -0             = 
+   453 BeforeDeadline[AV5,P4,10.15]
+                                   0            -0             = 
+   454 BeforeDeadline[AV5,P4,10.3]
+                                   0            -0             = 
+   455 NoConsecutiveSlots[P1,9,9.15]
+                                   0                           1 
+   456 NoConsecutiveSlots[P1,9.15,9.3]
+                                   0                           1 
+   457 NoConsecutiveSlots[P1,10,10.15]
+                                   1                           1 
+   458 NoConsecutiveSlots[P1,10.15,10.3]
+                                   0                           1 
+   459 NoConsecutiveSlots[P2,9,9.15]
+                                   0                           1 
+   460 NoConsecutiveSlots[P2,9.15,9.3]
+                                   0                           1 
+   461 NoConsecutiveSlots[P2,10,10.15]
+                                   0                           1 
+   462 NoConsecutiveSlots[P2,10.15,10.3]
+                                   0                           1 
+   463 NoConsecutiveSlots[P3,9,9.15]
+                                   1                           1 
+   464 NoConsecutiveSlots[P3,9.15,9.3]
+                                   1                           1 
+   465 NoConsecutiveSlots[P3,10,10.15]
+                                   0                           1 
+   466 NoConsecutiveSlots[P3,10.15,10.3]
+                                   0                           1 
+   467 NoConsecutiveSlots[P4,9,9.15]
+                                   1                           1 
+   468 NoConsecutiveSlots[P4,9.15,9.3]
+                                   0                           1 
+   469 NoConsecutiveSlots[P4,10,10.15]
+                                   1                           1 
+   470 NoConsecutiveSlots[P4,10.15,10.3]
+                                   1                           1 
+
+   No. Column name       Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 x[AV1,P1,9]  *              0             0             1 
+     2 x[AV1,P1,9.15]
+                    *              0             0             1 
+     3 x[AV1,P1,9.3]
+                    *              0             0             1 
+     4 x[AV1,P1,9.45]
+                    *              0             0             1 
+     5 x[AV1,P1,10] *              0             0             1 
+     6 x[AV1,P1,10.15]
+                    *              0             0             1 
+     7 x[AV1,P1,10.3]
+                    *              0             0             1 
+     8 x[AV1,P2,9]  *              0             0             1 
+     9 x[AV1,P2,9.15]
+                    *              0             0             1 
+    10 x[AV1,P2,9.3]
+                    *              0             0             1 
+    11 x[AV1,P2,9.45]
+                    *              0             0             1 
+    12 x[AV1,P2,10] *              0             0             1 
+    13 x[AV1,P2,10.15]
+                    *              0             0             1 
+    14 x[AV1,P2,10.3]
+                    *              0             0             1 
+    15 x[AV1,P3,9]  *              0             0             1 
+    16 x[AV1,P3,9.15]
+                    *              1             0             1 
+    17 x[AV1,P3,9.3]
+                    *              0             0             1 
+    18 x[AV1,P3,9.45]
+                    *              0             0             1 
+    19 x[AV1,P3,10] *              0             0             1 
+    20 x[AV1,P3,10.15]
+                    *              0             0             1 
+    21 x[AV1,P3,10.3]
+                    *              0             0             1 
+    22 x[AV1,P4,9]  *              0             0             1 
+    23 x[AV1,P4,9.15]
+                    *              0             0             1 
+    24 x[AV1,P4,9.3]
+                    *              0             0             1 
+    25 x[AV1,P4,9.45]
+                    *              0             0             1 
+    26 x[AV1,P4,10] *              0             0             1 
+    27 x[AV1,P4,10.15]
+                    *              0             0             1 
+    28 x[AV1,P4,10.3]
+                    *              0             0             1 
+    29 x[AV2,P1,9]  *              0             0             1 
+    30 x[AV2,P1,9.15]
+                    *              0             0             1 
+    31 x[AV2,P1,9.3]
+                    *              0             0             1 
+    32 x[AV2,P1,9.45]
+                    *              0             0             1 
+    33 x[AV2,P1,10] *              0             0             1 
+    34 x[AV2,P1,10.15]
+                    *              0             0             1 
+    35 x[AV2,P1,10.3]
+                    *              0             0             1 
+    36 x[AV2,P2,9]  *              0             0             1 
+    37 x[AV2,P2,9.15]
+                    *              0             0             1 
+    38 x[AV2,P2,9.3]
+                    *              0             0             1 
+    39 x[AV2,P2,9.45]
+                    *              0             0             1 
+    40 x[AV2,P2,10] *              0             0             1 
+    41 x[AV2,P2,10.15]
+                    *              0             0             1 
+    42 x[AV2,P2,10.3]
+                    *              0             0             1 
+    43 x[AV2,P3,9]  *              0             0             1 
+    44 x[AV2,P3,9.15]
+                    *              0             0             1 
+    45 x[AV2,P3,9.3]
+                    *              0             0             1 
+    46 x[AV2,P3,9.45]
+                    *              0             0             1 
+    47 x[AV2,P3,10] *              0             0             1 
+    48 x[AV2,P3,10.15]
+                    *              0             0             1 
+    49 x[AV2,P3,10.3]
+                    *              0             0             1 
+    50 x[AV2,P4,9]  *              1             0             1 
+    51 x[AV2,P4,9.15]
+                    *              0             0             1 
+    52 x[AV2,P4,9.3]
+                    *              0             0             1 
+    53 x[AV2,P4,9.45]
+                    *              0             0             1 
+    54 x[AV2,P4,10] *              0             0             1 
+    55 x[AV2,P4,10.15]
+                    *              0             0             1 
+    56 x[AV2,P4,10.3]
+                    *              0             0             1 
+    57 x[AV3,P1,9]  *              0             0             1 
+    58 x[AV3,P1,9.15]
+                    *              0             0             1 
+    59 x[AV3,P1,9.3]
+                    *              0             0             1 
+    60 x[AV3,P1,9.45]
+                    *              0             0             1 
+    61 x[AV3,P1,10] *              0             0             1 
+    62 x[AV3,P1,10.15]
+                    *              0             0             1 
+    63 x[AV3,P1,10.3]
+                    *              0             0             1 
+    64 x[AV3,P2,9]  *              0             0             1 
+    65 x[AV3,P2,9.15]
+                    *              0             0             1 
+    66 x[AV3,P2,9.3]
+                    *              0             0             1 
+    67 x[AV3,P2,9.45]
+                    *              1             0             1 
+    68 x[AV3,P2,10] *              0             0             1 
+    69 x[AV3,P2,10.15]
+                    *              0             0             1 
+    70 x[AV3,P2,10.3]
+                    *              0             0             1 
+    71 x[AV3,P3,9]  *              0             0             1 
+    72 x[AV3,P3,9.15]
+                    *              0             0             1 
+    73 x[AV3,P3,9.3]
+                    *              0             0             1 
+    74 x[AV3,P3,9.45]
+                    *              0             0             1 
+    75 x[AV3,P3,10] *              0             0             1 
+    76 x[AV3,P3,10.15]
+                    *              0             0             1 
+    77 x[AV3,P3,10.3]
+                    *              0             0             1 
+    78 x[AV3,P4,9]  *              0             0             1 
+    79 x[AV3,P4,9.15]
+                    *              0             0             1 
+    80 x[AV3,P4,9.3]
+                    *              0             0             1 
+    81 x[AV3,P4,9.45]
+                    *              0             0             1 
+    82 x[AV3,P4,10] *              0             0             1 
+    83 x[AV3,P4,10.15]
+                    *              0             0             1 
+    84 x[AV3,P4,10.3]
+                    *              0             0             1 
+    85 x[AV4,P1,9]  *              0             0             1 
+    86 x[AV4,P1,9.15]
+                    *              0             0             1 
+    87 x[AV4,P1,9.3]
+                    *              0             0             1 
+    88 x[AV4,P1,9.45]
+                    *              0             0             1 
+    89 x[AV4,P1,10] *              1             0             1 
+    90 x[AV4,P1,10.15]
+                    *              0             0             1 
+    91 x[AV4,P1,10.3]
+                    *              0             0             1 
+    92 x[AV4,P2,9]  *              0             0             1 
+    93 x[AV4,P2,9.15]
+                    *              0             0             1 
+    94 x[AV4,P2,9.3]
+                    *              0             0             1 
+    95 x[AV4,P2,9.45]
+                    *              0             0             1 
+    96 x[AV4,P2,10] *              0             0             1 
+    97 x[AV4,P2,10.15]
+                    *              0             0             1 
+    98 x[AV4,P2,10.3]
+                    *              0             0             1 
+    99 x[AV4,P3,9]  *              0             0             1 
+   100 x[AV4,P3,9.15]
+                    *              0             0             1 
+   101 x[AV4,P3,9.3]
+                    *              0             0             1 
+   102 x[AV4,P3,9.45]
+                    *              0             0             1 
+   103 x[AV4,P3,10] *              0             0             1 
+   104 x[AV4,P3,10.15]
+                    *              0             0             1 
+   105 x[AV4,P3,10.3]
+                    *              0             0             1 
+   106 x[AV4,P4,9]  *              0             0             1 
+   107 x[AV4,P4,9.15]
+                    *              0             0             1 
+   108 x[AV4,P4,9.3]
+                    *              0             0             1 
+   109 x[AV4,P4,9.45]
+                    *              0             0             1 
+   110 x[AV4,P4,10] *              0             0             1 
+   111 x[AV4,P4,10.15]
+                    *              0             0             1 
+   112 x[AV4,P4,10.3]
+                    *              0             0             1 
+   113 x[AV5,P1,9]  *              0             0             1 
+   114 x[AV5,P1,9.15]
+                    *              0             0             1 
+   115 x[AV5,P1,9.3]
+                    *              0             0             1 
+   116 x[AV5,P1,9.45]
+                    *              0             0             1 
+   117 x[AV5,P1,10] *              0             0             1 
+   118 x[AV5,P1,10.15]
+                    *              0             0             1 
+   119 x[AV5,P1,10.3]
+                    *              0             0             1 
+   120 x[AV5,P2,9]  *              0             0             1 
+   121 x[AV5,P2,9.15]
+                    *              0             0             1 
+   122 x[AV5,P2,9.3]
+                    *              0             0             1 
+   123 x[AV5,P2,9.45]
+                    *              0             0             1 
+   124 x[AV5,P2,10] *              0             0             1 
+   125 x[AV5,P2,10.15]
+                    *              0             0             1 
+   126 x[AV5,P2,10.3]
+                    *              0             0             1 
+   127 x[AV5,P3,9]  *              0             0             1 
+   128 x[AV5,P3,9.15]
+                    *              0             0             1 
+   129 x[AV5,P3,9.3]
+                    *              0             0             1 
+   130 x[AV5,P3,9.45]
+                    *              0             0             1 
+   131 x[AV5,P3,10] *              0             0             1 
+   132 x[AV5,P3,10.15]
+                    *              0             0             1 
+   133 x[AV5,P3,10.3]
+                    *              0             0             1 
+   134 x[AV5,P4,9]  *              0             0             1 
+   135 x[AV5,P4,9.15]
+                    *              0             0             1 
+   136 x[AV5,P4,9.3]
+                    *              0             0             1 
+   137 x[AV5,P4,9.45]
+                    *              0             0             1 
+   138 x[AV5,P4,10] *              0             0             1 
+   139 x[AV5,P4,10.15]
+                    *              1             0             1 
+   140 x[AV5,P4,10.3]
+                    *              0             0             1 
+
+Integer feasibility conditions:
+
+KKT.PE: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output

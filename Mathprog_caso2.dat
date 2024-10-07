@@ -1,0 +1,35 @@
+data;
+
+set A := AV1 AV2 AV3 AV4 AV5;  # Aviones
+set P := P1 P2 P3 P4;          # Pistas
+set T := 9.00 9.15 9.30 9.45 10.00 10.15 10.30;  # Slots de tiempo (horas reales)
+
+param l := 
+    AV1 9.10
+    AV2 8.55
+    AV3 9.40
+    AV4 9.55
+    AV5 10.10;  # Horas programadas de llegada (horas reales)
+
+param d := 
+    AV1 10.15
+    AV2 9.30
+    AV3 10.00
+    AV4 10.15
+    AV5 10.30;  # Hora límite para aterrizar (horas reales)
+
+param c := 
+    AV1 100
+    AV2 200
+    AV3 150
+    AV4 250
+    AV5 200;  # Coste por minuto de retraso
+
+# Disponibilidad de los slots (1 = libre, 0 = ocupado)
+param S : 9.00 9.15 9.30 9.45 10.00 10.15 10.30:=
+    P1   0    0    0    0    1    1    0
+    P2   0    0    1    1    0    0    0
+    P3   1    1    1    0    0    1    0
+    P4   1    0    0    0    1    1    0;  # Disponibilidad de los slots en cada pista
+
+end;

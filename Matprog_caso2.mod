@@ -1,42 +1,46 @@
 # Modelo de asignación de slots de aterrizaje para aviones
-set A;  # Conjunto de aviones
-set P;  # Conjunto de pistas
-set T;  # Conjunto de slots de tiempo (horas reales)
+set AVION;  # Conjunto de aviones
+set PISTA;  # Conjunto de pistas
+set SLOT;   # Conjunto de slots de tiempo (horas reales)
 
-param l {A};   # Hora programada de llegada de cada avión (horas reales)
-param d {A};   # Hora límite de aterrizaje de cada avión (horas reales)
-param c {A};   # Coste por minuto de retraso de cada avión
-param S {P, T}, binary;  # Disponibilidad de los slots (1 = disponible, 0 = no disponible)
+param HoraProgramada {a in AVION};                              # Hora programada de llegada de cada avión (horas reales)
+param HoraLimite {a in AVION};                                  # Hora límite de aterrizaje de cada avión (horas reales)
+param HoraPosibleLlegada {s in SLOT};                           # Hora de inicio de cada slot (horas reales)
+param CostePorMinuto {c in AVION}, >= 0;                        # Coste por minuto de retraso de cada avión, siempre positivo
+param SlotDisponiblePorPista {p in PISTA, s in SLOT}, binary;   # Disponibilidad de los slots (1 = disponible, 0 = no disponible)
+param M;                                                        # Valor muy grande, big-M
 
 # Variables
-var x {A, P, T}, binary;  # Variable binaria: 1 si el avión aterriza en el slot t de la pista p
+var disponibilidad{a in AVION, p in PISTA, s in SLOT}, binary;  # Variable binaria: 1 si el avión aterriza en el slot t de la pista p
 
 # Función objetivo: Minimizar el coste total de los retrasos
 minimize TotalCost:
-    sum {a in A, p in P, t in T} c[a] * (max(0, (t - l[a]) * 60)) * x[a,p,t];
+    sum {a in AVION, p in PISTA, s in SLOT} CostePorMinuto[a] * (HoraPosibleLlegada[s] - HoraProgramada[a]) * disponibilidad[a,p,s];
+
+# Restricciones
 
 # Restricción 1: Cada avión debe aterrizar exactamente una vez
-subject to OneLanding {a in A}:
-    sum {p in P, t in T} x[a,p,t] = 1;
+s.t. OneLanding {a in AVION}:
+    sum {p in PISTA, s in SLOT} disponibilidad[a,p,s] = 1;
 
 # Restricción 2: Un slot solo puede estar asignado a un avión
-subject to OnePlanePerSlot {p in P, t in T}:
-    sum {a in A} x[a,p,t] <= 1;
+s.t. OnePlanePerSlot {p in PISTA, s in SLOT}:
+    sum {a in AVION} disponibilidad[a,p,s] <= 1;
 
 # Restricción 3: Solo se pueden asignar slots disponibles
-subject to SlotAvailability {a in A, p in P, t in T}:
-    x[a,p,t] <= S[p,t];
+s.t. SlotAvailability {a in AVION, p in PISTA, s in SLOT}:
+    disponibilidad[a,p,s] <= SlotDisponiblePorPista[p,s];
 
 # Restricción 4: El slot debe ser igual o posterior a la hora de llegada programada
-subject to AfterArrival {a in A, p in P, t in T}:
-    if t < l[a] then x[a,p,t] = 0;
+s.t. AfterArrival {a in AVION, p in PISTA, s in SLOT}:
+    HoraPosibleLlegada[s] >= HoraProgramada[a] - M * (1 - disponibilidad[a,p,s]);
 
 # Restricción 5: El slot debe ser igual o anterior a la hora límite de aterrizaje
-subject to BeforeDeadline {a in A, p in P, t in T}:
-    if t > d[a] then x[a,p,t] = 0;
+s.t. BeforeDeadline {a in AVION, p in PISTA, s in SLOT}:
+    HoraPosibleLlegada[s] <= HoraLimite[a] + M * (1 - disponibilidad[a,p,s]);
 
 # Restricción 6: Si un avión aterriza en el slot t de la pista p, el siguiente slot t+1 no puede ser ocupado por ningún avión
-subject to NoConsecutiveSlots {p in P, t1 in T, t2 in T: t2 = t1 + 0.15}:
-    sum {a in A} x[a,p,t1] + sum {a in A} x[a,p,t2] <= 1;
+s.t. NoConsecutiveSlots {a in AVION, p in PISTA, s in 1..6}:
+    disponibilidad[a,p,s] + disponibilidad[a,p,s+1] <= 1;
 
 end;

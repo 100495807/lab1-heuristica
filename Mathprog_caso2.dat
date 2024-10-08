@@ -2,40 +2,41 @@ data;
 
 #aqui se definen los sets
 
-set AVION := AV1 AV2 AV3 AV4 AV5;   # Aviones
-set PISTA := P1 P2 P3 P4;           # Pistas
+set AIRPLANE := AV1 AV2 AV3 AV4 AV5;   # Aviones
+set RUNWAY := P1 P2 P3 P4;           # Pistas
 set SLOT := 1, 2, 3, 4, 5, 6, 7;    # Slots de tiempo (horas reales)
 
 #aqui se definen los parametros
 
 #big-M
-param M := 10000;
+param big_M := 999999;
 
-param HoraProgramada := 
-    AV1 550,    # 9:10 AM -> 9*60 + 10 = 550 minutos
-    AV2 535     # 8:55 AM -> 8*60 + 55 = 535 minutos
-    AV3 580     # 9:40 AM -> 9*60 + 40 = 580 minutos
-    AV4 595     # 9:55 AM -> 9*60 + 55 = 595 minutos
-    AV5 610;    # 10:10 AM -> 10*60 + 10 = 610 minutos
+#Las horas se expresan en minutos teniendo en cuenta que 0 minutos = a 00:00
+param scheduled_arrival := 
+    AV1 550,    # 09:10 = 550 minutos
+    AV2 535     # 08:55 = 535 minutos
+    AV3 580     # 09:40 = 580 minutos
+    AV4 595     # 09:55 = 595 minutos
+    AV5 610;    # 10:10 = 610 minutos
 
-param HoraLimite := 
-    AV1 615     # 10:15 AM -> 10*60 + 15 = 615 minutos
-    AV2 570     # 9:30 AM -> 9*60 + 30 = 570 minutos
-    AV3 600     # 10:00 AM -> 10*60 = 600 minutos
-    AV4 615     # 10:15 AM -> 10*60 + 15 = 615 minutos
-    AV5 630;    # 10:30 AM -> 10*60 + 30 = 630 minutos
+param landing_deadline := 
+    AV1 615     # 10:15 = 615 minutos
+    AV2 570     # 09:30 = 570 minutos
+    AV3 600     # 10:00 = 600 minutos
+    AV4 615     # 10:15 = 615 minutos
+    AV5 630;    # 10:30 = 630 minutos
 
 
-param HoraPosibleLlegada :=
-    1 540       # 9:00 AM -> 9*60 = 540 minutos
-    2 555       # 9:15 AM -> 9*60 + 15 = 555 minutos
-    3 570       # 9:30 AM -> 9*60 + 30 = 570 minutos
-    4 585       # 9:45 AM -> 9*60 + 45 = 585 minutos
-    5 600       # 10:00 AM -> 10*60 = 600 minutos
-    6 615       # 10:15 AM -> 10*60 + 15 = 615 minutos
-    7 630;      #10:30 AM -> 10*60 + 30 = 630 minutos
+param possible_arrival_time :=
+    1 540       # 09:00 = 540 minutos
+    2 555       # 09:15 = 555 minutos
+    3 570       # 09:30 = 570 minutos
+    4 585       # 09:45 = 585 minutos
+    5 600       # 10:00 = 600 minutos
+    6 615       # 10:15 = 615 minutos
+    7 630;      # 10:30 = 630 minutos
 
-param CostePorMinuto := 
+param delay_cost := 
     AV1 100
     AV2 200
     AV3 150
@@ -44,10 +45,10 @@ param CostePorMinuto :=
 
 
 # Disponibilidad de los slots (1 = libre, 0 = ocupado)
-param SlotDisponiblePorPista : 1 2 3 4 5 6 7:=
-    [P1, 1] 0, [P1, 2] 0, [P1, 3] 0, [P1, 4] 0, [P1, 5] 1, [P1, 6] 1, [P1, 7] 0,
-    [P2, 1] 0, [P2, 2] 0, [P2, 3] 1, [P2, 4] 1, [P2, 5] 0, [P2, 6] 0, [P2, 7] 0,
-    [P3, 1] 1, [P3, 2] 1, [P3, 3] 1, [P3, 4] 0, [P3, 5] 0, [P3, 6] 1, [P3, 7] 0,
-    [P4, 1] 1, [P4, 2] 0, [P4, 3] 0, [P4, 4] 0, [P4, 5] 1, [P4, 6] 1, [P4, 7] 0;  # Disponibilidad de los slots en cada pista
+param slot_availability : 1 2 3 4 5 6 7:=
+    P1  0 0 0 0 1 1 0
+    P2  0 0 1 1 0 0 0
+    P3  1 1 1 0 0 1 0
+    P4  1 0 0 0 1 1 0;  # Disponibilidad de los slots en cada pista
 
 end;

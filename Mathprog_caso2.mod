@@ -9,9 +9,11 @@ param delay_cost {c in AIRPLANE}, >= 0;                                 # Coste 
 param possible_arrival_time {s in SLOT};                                # Hora posible de llegada de cada slot (horas reales)
 param slot_availability {r in RUNWAY, s in SLOT}, binary;               # Disponibilidad de cada slot de tiempo en cada pista
 param big_M;                                                            # Valor muy grande, big-M
+param b;                                                                # variable local b=1 
+param c;                                                                # variable local c=6
 
 # Variables
-var availability{a in AIRPLANE, r in RUNWAY, s in SLOT}, binary;  # Variable binaria: 1 si el avión aterriza en el slot t de la pista p
+var availability{a in AIRPLANE, r in RUNWAY, s in SLOT}, binary;        # Variable binaria: 1 si el avión aterriza en el slot t de la pista p
 
 # Función objetivo: Minimizar el coste total de los retrasos
 minimize TotalCost:
@@ -21,11 +23,11 @@ minimize TotalCost:
 
 # Restricción 1: Cada avión debe aterrizar exactamente una vez
 s.t. OneLanding {a in AIRPLANE}:
-    sum {r in RUNWAY, s in SLOT} availability[a,r,s] = 1;
+    sum {r in RUNWAY, s in SLOT} availability[a,r,s] = b;
 
 # Restricción 2: Un slot solo puede estar asignado a un avión
 s.t. OnePlanePerSlot {r in RUNWAY, s in SLOT}:
-    sum {a in AIRPLANE} availability[a,r,s] <= 1;
+    sum {a in AIRPLANE} availability[a,r,s] <= b;
 
 # Restricción 3: Solo se pueden asignar slots disponibles
 s.t. SlotAvailability {a in AIRPLANE, r in RUNWAY, s in SLOT}:
@@ -33,14 +35,14 @@ s.t. SlotAvailability {a in AIRPLANE, r in RUNWAY, s in SLOT}:
 
 # Restricción 4: El slot debe ser igual o posterior a la hora de llegada programada
 s.t. AfterArrival {a in AIRPLANE, r in RUNWAY, s in SLOT}:
-    possible_arrival_time[s] >= scheduled_arrival[a] - big_M * (1 - availability[a,r,s]);
+    possible_arrival_time[s] >= scheduled_arrival[a] - big_M * (b - availability[a,r,s]);
 
 # Restricción 5: El slot debe ser igual o anterior a la hora límite de aterrizaje
 s.t. BeforeDeadline {a in AIRPLANE, r in RUNWAY, s in SLOT}:
-    possible_arrival_time[s] <= landing_deadline[a] + big_M * (1 - availability[a,r,s]);
+    possible_arrival_time[s] <= landing_deadline[a] + big_M * (b - availability[a,r,s]);
 
 # Restricción 6: Si un avión aterriza en el slot t de la pista p, el siguiente slot t+1 no puede ser ocupado por ningún avión
-s.t. NoConsecutiveSlots {a in AIRPLANE, r in RUNWAY, s in 1..6}:
-    availability[a,r,s] + availability[a,r,s+1] <= 1;
+s.t. NoConsecutiveSlots {a in AIRPLANE, r in RUNWAY, s in b..c}:
+    availability[a,r,s] + availability[a,r,s+b] <= b;
 
 end;

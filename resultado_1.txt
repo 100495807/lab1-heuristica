@@ -54,35 +54,35 @@ Objective:  Beneficio_Total = 26190 (MAXimum)
 
    No. Column name       Activity     Lower bound   Upper bound
 ------ ------------    ------------- ------------- -------------
-     1 x[AV1,Estandar]
+     1 billetes[AV1,Estandar]
                     *             19             0               
-     2 x[AV1,LeisurePlus]
+     2 billetes[AV1,LeisurePlus]
                     *             58             0               
-     3 x[AV1,BusinessPlus]
+     3 billetes[AV1,BusinessPlus]
                     *             13             0               
-     4 x[AV2,Estandar]
+     4 billetes[AV2,Estandar]
                     *             38             0               
-     5 x[AV2,LeisurePlus]
+     5 billetes[AV2,LeisurePlus]
                     *             31             0               
-     6 x[AV2,BusinessPlus]
+     6 billetes[AV2,BusinessPlus]
                     *             51             0               
-     7 x[AV3,Estandar]
+     7 billetes[AV3,Estandar]
                     *            160             0               
-     8 x[AV3,LeisurePlus]
+     8 billetes[AV3,LeisurePlus]
                     *             23             0               
-     9 x[AV3,BusinessPlus]
+     9 billetes[AV3,BusinessPlus]
                     *             17             0               
-    10 x[AV4,Estandar]
+    10 billetes[AV4,Estandar]
                     *            100             0               
-    11 x[AV4,LeisurePlus]
+    11 billetes[AV4,LeisurePlus]
                     *             20             0               
-    12 x[AV4,BusinessPlus]
+    12 billetes[AV4,BusinessPlus]
                     *             30             0               
-    13 x[AV5,Estandar]
+    13 billetes[AV5,Estandar]
                     *            133             0               
-    14 x[AV5,LeisurePlus]
+    14 billetes[AV5,LeisurePlus]
                     *             21             0               
-    15 x[AV5,BusinessPlus]
+    15 billetes[AV5,BusinessPlus]
                     *             36             0               
 
 Integer feasibility conditions:

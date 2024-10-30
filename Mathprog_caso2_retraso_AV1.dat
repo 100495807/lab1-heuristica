@@ -11,15 +11,9 @@ set SLOT := 1, 2, 3, 4, 5, 6, 7;    # Slots de tiempo (horas reales)
 #big-M
 param big_M := 999999;
 
-#b, variable local b=1
-param b := 1;
-
-#c, variable local c=6
-param c := 6;
-
 #Las horas se expresan en minutos teniendo en cuenta que 0 minutos = 00:00
 param scheduled_arrival := 
-    AV1 550,    # 09:10 = 550 minutos
+    AV1 570,    # 09:30 = 570 minutos retraso de 20 minutos
     AV2 535     # 08:55 = 535 minutos
     AV3 580     # 09:40 = 580 minutos
     AV4 595     # 09:55 = 595 minutos

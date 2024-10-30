@@ -1,13 +1,13 @@
-Problem:    Matprog_caso2
+Problem:    Mathprog_caso2
 Rows:       574
 Columns:    140 (140 integer, 140 binary)
-Non-zeros:  1080
+Non-zeros:  1076
 Status:     INTEGER OPTIMAL
-Objective:  TotalCost = 4500 (MINimum)
+Objective:  TotalCost = 4000 (MINimum)
 
    No.   Row name        Activity     Lower bound   Upper bound
 ------ ------------    ------------- ------------- -------------
-     1 TotalCost                4500                             
+     1 TotalCost                4000                             
      2 OneLanding[AV1]
                                    1             1             = 
      3 OneLanding[AV2]
@@ -37,7 +37,7 @@ Objective:  TotalCost = 4500 (MINimum)
     15 OnePlanePerSlot[P2,2]
                                    0                           1 
     16 OnePlanePerSlot[P2,3]
-                                   0                           1 
+                                   1                           1 
     17 OnePlanePerSlot[P2,4]
                                    1                           1 
     18 OnePlanePerSlot[P2,5]
@@ -49,7 +49,7 @@ Objective:  TotalCost = 4500 (MINimum)
     21 OnePlanePerSlot[P3,1]
                                    0                           1 
     22 OnePlanePerSlot[P3,2]
-                                   1                           1 
+                                   0                           1 
     23 OnePlanePerSlot[P3,3]
                                    0                           1 
     24 OnePlanePerSlot[P3,4]
@@ -93,7 +93,7 @@ Objective:  TotalCost = 4500 (MINimum)
     43 SlotAvailability[AV1,P2,2]
                                    0                          -0 
     44 SlotAvailability[AV1,P2,3]
-                                   0                           1 
+                                   1                           1 
     45 SlotAvailability[AV1,P2,4]
                                    0                           1 
     46 SlotAvailability[AV1,P2,5]
@@ -105,7 +105,7 @@ Objective:  TotalCost = 4500 (MINimum)
     49 SlotAvailability[AV1,P3,1]
                                    0                           1 
     50 SlotAvailability[AV1,P3,2]
-                                   1                           1 
+                                   0                           1 
     51 SlotAvailability[AV1,P3,3]
                                    0                           1 
     52 SlotAvailability[AV1,P3,4]
@@ -355,61 +355,61 @@ Objective:  TotalCost = 4500 (MINimum)
    174 SlotAvailability[AV5,P4,7]
                                    0                          -0 
    175 AfterArrival[AV1,P1,1]
-                                   0       -999989               
+                                   0       -999969               
    176 AfterArrival[AV1,P1,2]
-                                   0        -1e+06               
+                                   0       -999984               
    177 AfterArrival[AV1,P1,3]
-                                   0  -1.00002e+06               
+                                   0       -999999               
    178 AfterArrival[AV1,P1,4]
-                                   0  -1.00003e+06               
+                                   0  -1.00001e+06               
    179 AfterArrival[AV1,P1,5]
-                                   0  -1.00005e+06               
+                                   0  -1.00003e+06               
    180 AfterArrival[AV1,P1,6]
-                                   0  -1.00006e+06               
+                                   0  -1.00004e+06               
    181 AfterArrival[AV1,P1,7]
-                                   0  -1.00008e+06               
+                                   0  -1.00006e+06               
    182 AfterArrival[AV1,P2,1]
-                                   0       -999989               
+                                   0       -999969               
    183 AfterArrival[AV1,P2,2]
-                                   0        -1e+06               
+                                   0       -999984               
    184 AfterArrival[AV1,P2,3]
-                                   0  -1.00002e+06               
+                             -999999       -999999               
    185 AfterArrival[AV1,P2,4]
-                                   0  -1.00003e+06               
+                                   0  -1.00001e+06               
    186 AfterArrival[AV1,P2,5]
-                                   0  -1.00005e+06               
+                                   0  -1.00003e+06               
    187 AfterArrival[AV1,P2,6]
-                                   0  -1.00006e+06               
+                                   0  -1.00004e+06               
    188 AfterArrival[AV1,P2,7]
-                                   0  -1.00008e+06               
+                                   0  -1.00006e+06               
    189 AfterArrival[AV1,P3,1]
-                                   0       -999989               
+                                   0       -999969               
    190 AfterArrival[AV1,P3,2]
-                             -999999        -1e+06               
+                                   0       -999984               
    191 AfterArrival[AV1,P3,3]
-                                   0  -1.00002e+06               
+                                   0       -999999               
    192 AfterArrival[AV1,P3,4]
-                                   0  -1.00003e+06               
+                                   0  -1.00001e+06               
    193 AfterArrival[AV1,P3,5]
-                                   0  -1.00005e+06               
-   194 AfterArrival[AV1,P3,6]
-                                   0  -1.00006e+06               
-   195 AfterArrival[AV1,P3,7]
-                                   0  -1.00008e+06               
-   196 AfterArrival[AV1,P4,1]
-                                   0       -999989               
-   197 AfterArrival[AV1,P4,2]
-                                   0        -1e+06               
-   198 AfterArrival[AV1,P4,3]
-                                   0  -1.00002e+06               
-   199 AfterArrival[AV1,P4,4]
                                    0  -1.00003e+06               
-   200 AfterArrival[AV1,P4,5]
-                                   0  -1.00005e+06               
-   201 AfterArrival[AV1,P4,6]
+   194 AfterArrival[AV1,P3,6]
+                                   0  -1.00004e+06               
+   195 AfterArrival[AV1,P3,7]
                                    0  -1.00006e+06               
+   196 AfterArrival[AV1,P4,1]
+                                   0       -999969               
+   197 AfterArrival[AV1,P4,2]
+                                   0       -999984               
+   198 AfterArrival[AV1,P4,3]
+                                   0       -999999               
+   199 AfterArrival[AV1,P4,4]
+                                   0  -1.00001e+06               
+   200 AfterArrival[AV1,P4,5]
+                                   0  -1.00003e+06               
+   201 AfterArrival[AV1,P4,6]
+                                   0  -1.00004e+06               
    202 AfterArrival[AV1,P4,7]
-                                   0  -1.00008e+06               
+                                   0  -1.00006e+06               
    203 AfterArrival[AV2,P1,1]
                                    0        -1e+06               
    204 AfterArrival[AV2,P1,2]
@@ -653,7 +653,7 @@ Objective:  TotalCost = 4500 (MINimum)
    323 BeforeDeadline[AV1,P2,2]
                                    0                 1.00006e+06 
    324 BeforeDeadline[AV1,P2,3]
-                                   0                 1.00004e+06 
+                              999999                 1.00004e+06 
    325 BeforeDeadline[AV1,P2,4]
                                    0                 1.00003e+06 
    326 BeforeDeadline[AV1,P2,5]
@@ -665,7 +665,7 @@ Objective:  TotalCost = 4500 (MINimum)
    329 BeforeDeadline[AV1,P3,1]
                                    0                 1.00007e+06 
    330 BeforeDeadline[AV1,P3,2]
-                              999999                 1.00006e+06 
+                                   0                 1.00006e+06 
    331 BeforeDeadline[AV1,P3,3]
                                    0                 1.00004e+06 
    332 BeforeDeadline[AV1,P3,4]
@@ -929,9 +929,9 @@ Objective:  TotalCost = 4500 (MINimum)
    461 NoConsecutiveSlots[AV1,P2,1]
                                    0                           1 
    462 NoConsecutiveSlots[AV1,P2,2]
-                                   0                           1 
+                                   1                           1 
    463 NoConsecutiveSlots[AV1,P2,3]
-                                   0                           1 
+                                   1                           1 
    464 NoConsecutiveSlots[AV1,P2,4]
                                    0                           1 
    465 NoConsecutiveSlots[AV1,P2,5]
@@ -939,9 +939,9 @@ Objective:  TotalCost = 4500 (MINimum)
    466 NoConsecutiveSlots[AV1,P2,6]
                                    0                           1 
    467 NoConsecutiveSlots[AV1,P3,1]
-                                   1                           1 
+                                   0                           1 
    468 NoConsecutiveSlots[AV1,P3,2]
-                                   1                           1 
+                                   0                           1 
    469 NoConsecutiveSlots[AV1,P3,3]
                                    0                           1 
    470 NoConsecutiveSlots[AV1,P3,4]
@@ -1176,7 +1176,7 @@ Objective:  TotalCost = 4500 (MINimum)
      9 availability[AV1,P2,2]
                     *              0             0             1 
     10 availability[AV1,P2,3]
-                    *              0             0             1 
+                    *              1             0             1 
     11 availability[AV1,P2,4]
                     *              0             0             1 
     12 availability[AV1,P2,5]
@@ -1188,7 +1188,7 @@ Objective:  TotalCost = 4500 (MINimum)
     15 availability[AV1,P3,1]
                     *              0             0             1 
     16 availability[AV1,P3,2]
-                    *              1             0             1 
+                    *              0             0             1 
     17 availability[AV1,P3,3]
                     *              0             0             1 
     18 availability[AV1,P3,4]

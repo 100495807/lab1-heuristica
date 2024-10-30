@@ -1,8 +1,14 @@
-
 # Definición de conjuntos
 set AVIONES := AV1 AV2 AV3 AV4 AV5;
 set TARIFAS := Estandar LeisurePlus BusinessPlus;
 
+#variables locales
+param minimo_leisure := 20;
+param minimo_business := 10;
+param porcentaje_minimo_estandar := 0.6;
+
+
+# Numero de asientos por avion
 param Asientos :=
     AV1 90
     AV2 120
@@ -10,6 +16,7 @@ param Asientos :=
     AV4 150
     AV5 190;
 
+# kg max en cada avion
 param Capacidad :=
     AV1 1700
     AV2 2700
@@ -17,11 +24,14 @@ param Capacidad :=
     AV4 1700
     AV5 2000;
 
+# Precio de billete segun su tarifa
 param Precio :=
     Estandar 19
     LeisurePlus 49
     BusinessPlus 69;
 
+
+# kg max equipaje pasajero segun tarifa
 param Peso :=
     Estandar 1
     LeisurePlus 20

@@ -1,0 +1,72 @@
+### Análisis de Resultados
+
+#### Descripción de la Solución Obtenida
+
+1. **Modelo 1: Maximización del Beneficio Total**
+   - **Objetivo**: Maximizar el beneficio total de la venta de billetes.
+   - **Resultado**: El beneficio total máximo obtenido es 26190.
+   - **Restricciones**:
+     - **Restricción de Asientos**: Cada avión tiene una capacidad máxima de asientos que no debe ser superada.
+     - **Restricción de Capacidad**: Cada avión tiene una capacidad máxima de equipaje que no debe ser superada.
+     - **Restricción de Mínimo de Billetes LeisurePlus y BusinessPlus**: Cada avión debe vender al menos 20 billetes LeisurePlus y 10 billetes BusinessPlus.
+     - **Restricción de Proporción de Billetes Estándar**: Los billetes estándar deben ser al menos el 60% de los billetes vendidos en cada avión.
+   - **Cumplimiento de Restricciones**: Todas las restricciones se cumplen, lo que indica que la solución es factible.
+
+2. **Modelo 2: Minimización del Coste Total de los Retrasos**
+   - **Objetivo**: Minimizar el coste total de los retrasos.
+   - **Resultado**: El coste total mínimo obtenido es 4500.
+   - **Restricciones**:
+     - **Restricción de Aterrizaje Único**: Cada avión debe aterrizar exactamente una vez.
+     - **Restricción de Un Avión por Slot**: Un slot solo puede estar asignado a un avión.
+     - **Restricción de Disponibilidad de Slots**: Solo se pueden asignar slots disponibles.
+     - **Restricción de Llegada Programada**: El slot debe ser igual o posterior a la hora de llegada programada.
+     - **Restricción de Hora Límite de Aterrizaje**: El slot debe ser igual o anterior a la hora límite de aterrizaje.
+     - **Restricción de Slots Consecutivos**: Si un avión aterriza en un slot, el siguiente slot no puede ser ocupado por ningún avión.
+   - **Cumplimiento de Restricciones**: Todas las restricciones se cumplen, lo que indica que la solución es factible.
+
+#### Análisis de la Complejidad del Problema
+
+1. **Variables y Restricciones Definidas**:
+   - **Modelo 1**:
+     - **Variables**: 15 (todas enteras).
+     - **Restricciones**: 22.
+   - **Modelo 2**:
+     - **Variables**: 140 (todas binarias).
+     - **Restricciones**: 574.
+
+2. **Modificación del Problema**:
+   - **Añadir/Eliminar Aviones/Pistas**:
+     - **Efecto en la Dificultad de Resolución**: Añadir más aviones o pistas aumenta el número de variables y restricciones, lo que incrementa la complejidad del problema y el tiempo de resolución. Eliminar aviones o pistas reduce la complejidad y el tiempo de resolución.
+   - **Variación de Parámetros**:
+     - **Efecto en la Dificultad de Resolución**: Cambiar los parámetros como el número de asientos, capacidad de equipaje, precios y costes puede afectar la factibilidad de las soluciones y el tiempo de resolución.
+
+#### Consideración de Retrasos en las Llegadas de los Vuelos
+
+1. **Modelado de Retrasos**:
+   - **Retraso de 20 Minutos para AV1**:
+     - **Modificación del Modelo**: Ajustar el parámetro de llegada programada para AV1 sumando 20 minutos.
+     - **Replanificación**: Ejecutar el modelo nuevamente para encontrar la nueva asignación de aviones a pistas y slots de tiempo.
+
+2. **Nueva Asignación de Aviones a Pistas y Slots de Tiempo**:
+   - **Resultado**: Si se encuentra una solución, describir la nueva asignación de aviones a pistas y slots de tiempo.
+
+#### Ventajas y Desventajas de las Herramientas Utilizadas
+
+1. **LibreOffice**:
+   - **Ventajas**:
+     - Interfaz gráfica amigable.
+     - Fácil de usar para usuarios no técnicos.
+     - Integración con otras aplicaciones de oficina.
+   - **Desventajas**:
+     - Limitaciones en la capacidad de resolver problemas grandes y complejos.
+     - Menor flexibilidad en la modelización de problemas avanzados.
+
+2. **GLPK (GNU Linear Programming Kit)**:
+   - **Ventajas**:
+     - Alta capacidad para resolver problemas grandes y complejos.
+     - Flexibilidad en la modelización de problemas avanzados.
+     - Soporte para múltiples tipos de problemas de optimización.
+   - **Desventajas**:
+     - Requiere conocimientos técnicos para su uso.
+     - Interfaz de línea de comandos menos amigable para usuarios no técnicos.
+

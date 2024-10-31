@@ -2,8 +2,8 @@ data;
 
 # Definición de conjuntos
 
-set AIRPLANE := AV1 AV2 AV3 AV4 AV5;   # Aviones
-set FARES := Standard LeisurePlus BusinessPlus;   # Tarifas
+set AVIONES := AV1 AV2 AV3 AV4 AV5;   # Aviones
+set TARIFAS := Estandar LeisurePlus BusinessPlus;   # Tarifas
 set RUNWAY := P1 P2 P3 P4;           # Pistas
 set SLOT := 1 2 3 4 5 6 7;           # Slots de tiempo (horas reales)
 
@@ -24,7 +24,7 @@ param b := 1;
 param c := 6;
 
 # Número de asientos disponibles en cada avión
-param number_seats := 
+param Asientos := 
     AV1 90
     AV2 120
     AV3 200
@@ -32,7 +32,7 @@ param number_seats :=
     AV5 190;
 
 # Capacidad de equipaje en cada avión (en kg)
-param capacity := 
+param Capacidad := 
     AV1 1700
     AV2 2700
     AV3 1300
@@ -40,14 +40,14 @@ param capacity :=
     AV5 2000;
 
 # Precio de cada tarifa
-param price := 
-    Standard 19
+param Precio := 
+    Estandar 19
     LeisurePlus 49
     BusinessPlus 69;
 
 # Peso del equipaje asociado a cada tarifa (en kg)
-param weight := 
-    Standard 1
+param Peso := 
+    Estandar 1
     LeisurePlus 20
     BusinessPlus 40;
 

@@ -1,4 +1,4 @@
-Problem:    Mathprog_combined
+Problem:    Mathprog_combinado
 Rows:       595
 Columns:    155 (155 integer, 140 binary)
 Non-zeros:  1150
@@ -1199,31 +1199,31 @@ Objective:  Net_Profit = 21690 (MAXimum)
 
    No. Column name       Activity     Lower bound   Upper bound
 ------ ------------    ------------- ------------- -------------
-     1 billetes[AV1,Standard]
+     1 billetes[AV1,Estandar]
                     *             20             0               
      2 billetes[AV1,LeisurePlus]
                     *             56             0               
      3 billetes[AV1,BusinessPlus]
                     *             14             0               
-     4 billetes[AV2,Standard]
+     4 billetes[AV2,Estandar]
                     *             40             0               
      5 billetes[AV2,LeisurePlus]
                     *             27             0               
      6 billetes[AV2,BusinessPlus]
                     *             53             0               
-     7 billetes[AV3,Standard]
+     7 billetes[AV3,Estandar]
                     *            159             0               
      8 billetes[AV3,LeisurePlus]
                     *             25             0               
      9 billetes[AV3,BusinessPlus]
                     *             16             0               
-    10 billetes[AV4,Standard]
+    10 billetes[AV4,Estandar]
                     *             98             0               
     11 billetes[AV4,LeisurePlus]
                     *             24             0               
     12 billetes[AV4,BusinessPlus]
                     *             28             0               
-    13 billetes[AV5,Standard]
+    13 billetes[AV5,Estandar]
                     *            133             0               
     14 billetes[AV5,LeisurePlus]
                     *             21             0               

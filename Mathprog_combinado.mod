@@ -20,7 +20,7 @@ param porcentaje_minimo_estandar;
 # Parámetros para los slots de aterrizaje
 param scheduled_arrival {a in AVIONES};                                # Hora programada de llegada de cada avión (horas reales)
 param landing_deadline {a in AVIONES};                                 # Hora límite de aterrizaje de cada avión (horas reales)
-param delay_cost {c in AVIONES}, >= 0;                                 # Coste por minuto de retraso de cada avión, siempre positivo
+param delay_cost {a in AVIONES}, >= 0;                                 # Coste por minuto de retraso de cada avión, siempre positivo
 param possible_arrival_time {s in SLOT};                                # Hora posible de llegada de cada slot (horas reales)
 param slot_availability {r in RUNWAY, s in SLOT}, binary;               # Disponibilidad de cada slot de tiempo en cada pista
 param big_M;                                                            # Valor muy grande, big-M
